@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Myra/1MyraLRoom.unity
+    guid: 6dd7a888a8b275a4f8e5363ca3a78a9a
+  - enabled: 1
+    path: Assets/Scenes/Myra/MyraHallway.unity
+    guid: f9e97579c7a06e3409465537daddb753
   m_configObjects: {}
