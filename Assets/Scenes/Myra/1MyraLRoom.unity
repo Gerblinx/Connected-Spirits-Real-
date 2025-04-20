@@ -904,6 +904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447498785}
   - component: {fileID: 447498786}
+  - component: {fileID: 447498787}
   m_Layer: 5
   m_Name: Tabs
   m_TagString: Untagged
@@ -959,6 +960,30 @@ MonoBehaviour:
   m_Spacing: {x: 15, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &447498787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447498784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b471479fc4ec52844b4eb74734c6e5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabImages:
+  - {fileID: 1119075500}
+  - {fileID: 2016022747}
+  - {fileID: 643188895}
+  - {fileID: 1687156640}
+  - {fileID: 374615134}
+  pages:
+  - {fileID: 1678106548}
+  - {fileID: 327510686}
+  - {fileID: 1806602078}
+  - {fileID: 1181049416}
+  - {fileID: 1802731658}
 --- !u!1 &643188893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4644e17dff21bc46b035bc38efb5101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 1528968429}
 --- !u!1 &940335206
 GameObject:
   m_ObjectHideFlags: 0
