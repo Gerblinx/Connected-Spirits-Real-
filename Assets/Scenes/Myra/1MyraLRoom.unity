@@ -2275,7 +2275,7 @@ MonoBehaviour:
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: e153408821aae3e4a9cd5daa39558cff, type: 3}
-  m_PointAction: {fileID: 0}
+  m_PointAction: {fileID: -1264383816452936706, guid: e153408821aae3e4a9cd5daa39558cff, type: 3}
   m_MoveAction: {fileID: -3477179883270581944, guid: e153408821aae3e4a9cd5daa39558cff, type: 3}
   m_SubmitAction: {fileID: 0}
   m_CancelAction: {fileID: 0}
