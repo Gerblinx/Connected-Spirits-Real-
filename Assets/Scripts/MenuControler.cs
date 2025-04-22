@@ -7,11 +7,11 @@ using UnityEngine.InputSystem;
 
 public class MenuControler : MonoBehaviour
 {
-    [SerializeField] private GameObject playerPage;
+   /* [SerializeField] private GameObject playerPage;
     [SerializeField] private GameObject savePage;
     [SerializeField] private GameObject loadPage;
     [SerializeField] private GameObject controlsPage;
-    [SerializeField] private GameObject settingsPage;
+    [SerializeField] private GameObject settingsPage;*/
 
     public GameObject menuCanvas;
     InputAction controlsAction;
@@ -20,11 +20,11 @@ public class MenuControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerPage.SetActive(false);
+        /*playerPage.SetActive(false);
         savePage.SetActive(false);
         loadPage.SetActive(false);
         controlsPage.SetActive(false);
-        settingsPage.SetActive(false);
+        settingsPage.SetActive(false);*/
 
         controlsAction = InputSystem.actions.FindAction("Menu");
 
@@ -57,7 +57,7 @@ public class MenuControler : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
         menuCanvas.SetActive(!menuCanvas.activeSelf);
-        playerPage.SetActive(true);
+        /*playerPage.SetActive(true);*/
     }
 
     public void Unpause()
@@ -65,68 +65,83 @@ public class MenuControler : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1f;
         menuCanvas.SetActive(!menuCanvas.activeSelf);
-        playerPage.SetActive(false);
+        /*playerPage.SetActive(false);*/
     }
 
-    public void closePages()
+    public void OnClick(InputAction.CallbackContext context)
     {
-        if(playerPage.activeSelf == true)
+        if (context.performed)
         {
-            playerPage.SetActive(false);
+            Invoke(nameof(ToggleMenuCanvas), 0f); // runs on next frame
         }
-        if(savePage.activeSelf == true)
-        {
-            savePage.SetActive(false);
-        }
-        if(loadPage.activeSelf == true)
-        {
-            loadPage.SetActive(false);
-        }
-        if(controlsPage.activeSelf == true)
-        {
-            controlsPage.SetActive(false);
-        }
-        if(settingsPage.activeSelf == true)
-        {
-            settingsPage.SetActive(false);
-        }
-
     }
 
-
-    public void PlayerTabOpen()
+    private void ToggleMenuCanvas()
     {
-        closePages();
-        playerPage.SetActive(true);
-        
+        menuCanvas.SetActive(!menuCanvas.activeSelf);
     }
 
-    public void SaveTabOpen()
-    {
-        closePages();
-        savePage.SetActive(true);
 
-    }
 
-    public void LoadTabOpen()
-    {
-        closePages();
-        loadPage.SetActive(true);
+    /* public void closePages()
+     {
+         if(playerPage.activeSelf == true)
+         {
+             playerPage.SetActive(false);
+         }
+         if(savePage.activeSelf == true)
+         {
+             savePage.SetActive(false);
+         }
+         if(loadPage.activeSelf == true)
+         {
+             loadPage.SetActive(false);
+         }
+         if(controlsPage.activeSelf == true)
+         {
+             controlsPage.SetActive(false);
+         }
+         if(settingsPage.activeSelf == true)
+         {
+             settingsPage.SetActive(false);
+         }
 
-    }
+     }
 
-    public void ControlsTabOpen()
-    {
-        closePages();
-        controlsPage.SetActive(true);
 
-    }
+     public void PlayerTabOpen()
+     {
+         closePages();
+         playerPage.SetActive(true);
 
-    public void SettingsTabOpen()
-    {
-        closePages();
-        settingsPage.SetActive(true);
+     }
 
-    }
+     public void SaveTabOpen()
+     {
+         closePages();
+         savePage.SetActive(true);
+
+     }
+
+     public void LoadTabOpen()
+     {
+         closePages();
+         loadPage.SetActive(true);
+
+     }
+
+     public void ControlsTabOpen()
+     {
+         closePages();
+         controlsPage.SetActive(true);
+
+     }
+
+     public void SettingsTabOpen()
+     {
+         closePages();
+         settingsPage.SetActive(true);
+
+     }*/
 
 }
