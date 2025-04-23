@@ -1,38 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    public Rigidbody2D rb;
     public float moveSpeed = 5f;
-    public InputAction PlayerControls;
 
-    Vector2 moveDirection = Vector2.zero;
+    private Rigidbody2D rb;
+    private Vector2 movement;
 
-    private void OnEnable()
+    private void Start()
     {
-        PlayerControls.Enable();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnDisable()
+    private void Update()
     {
-        PlayerControls.Disable();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        moveDirection = PlayerControls.ReadValue<Vector2>();
+        // Get input from horizontal and vertical axes
+        movement.x = Input.GetAxisRaw("Horizontal"); // A/D or Left/Right
+        movement.y = Input.GetAxisRaw("Vertical");   // W/S or Up/Down
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        // Move the player using Rigidbody2D
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
-
-
-
 }
