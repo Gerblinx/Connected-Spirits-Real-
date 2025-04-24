@@ -14,6 +14,45 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Myra/MyraHallway.unity
     guid: f9e97579c7a06e3409465537daddb753
+  - enabled: 1
+    path: Assets/Scenes/Myra/0MyraStart.unity
+    guid: 2a69ddb22a3cc044f942c880ee0c7da8
+  - enabled: 1
+    path: Assets/Scenes/Myra/1MyraSRoom.unity
+    guid: 953bd3ab8001f8f4dbf4e55bec8c5f6d
+  - enabled: 1
+    path: Assets/Scenes/Myra/2MyraLRoom.unity
+    guid: a06e2e0227c5bf640ace3bdf3b705e2b
+  - enabled: 1
+    path: Assets/Scenes/Myra/2MyraSRoom.unity
+    guid: 46a8cfccdf22dfb408b6865a5cb79306
+  - enabled: 1
+    path: Assets/Scenes/Myra/3MyraLRoom.unity
+    guid: c9771b95325c54c4f81a86a4c0b3aef2
+  - enabled: 1
+    path: Assets/Scenes/Myra/3MyraSRoom.unity
+    guid: 25a0da205125cea42b6bdffe817b0603
+  - enabled: 1
+    path: Assets/Scenes/Myra/4MyraLRoom.unity
+    guid: 8e4aa9fb935e46b45b126d00ac5f998f
+  - enabled: 1
+    path: Assets/Scenes/Myra/4MyraSRoom.unity
+    guid: 677499425b112144bb11a530a343b54f
+  - enabled: 1
+    path: Assets/Scenes/Myra/5MyraLRoom.unity
+    guid: a1f7cdf8ce32baa49b43b9e7a95980ee
+  - enabled: 1
+    path: Assets/Scenes/Myra/MyraEndArea.unity
+    guid: 2f8591c8abafffc498b50f9476def221
+  - enabled: 1
+    path: Assets/Scenes/Myra/MyraGarden.unity
+    guid: 1846e57b01baa5648a6fdf42a69c482c
+  - enabled: 1
+    path: Assets/Scenes/Myra/MyraLab.unity
+    guid: bc2580f14b6dd5246812bb4c49025ff9
+  - enabled: 1
+    path: Assets/Scenes/Myra/MyraRadiology.unity
+    guid: 73cf8b4a3aed2b94d9ac6722ef67f211
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 4c2ab2a90ceeba74fa48be358d5accd4, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e153408821aae3e4a9cd5daa39558cff, type: 3}
