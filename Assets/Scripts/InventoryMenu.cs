@@ -1,22 +1,22 @@
 using UnityEngine;
 
-public class MenuControler : MonoBehaviour
+public class InventoryMenu : MonoBehaviour
 {
-    public GameObject menuCanvas;
+    public GameObject inventoryCanvas;
 
     private bool isPaused;
 
     // Start is called before the first frame update
     void Start()
     {
-        menuCanvas.SetActive(false);
+        inventoryCanvas.SetActive(false);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.I))
         {
 
             if (!isPaused)
@@ -27,24 +27,20 @@ public class MenuControler : MonoBehaviour
             {
                 Unpause();
             }
-
         }
-
-
     }
 
     private void Pause()
     {
         isPaused = true;
         Time.timeScale = 0f;
-        menuCanvas.SetActive(true);
-
+        inventoryCanvas.SetActive(true);
     }
 
     private void Unpause()
     {
         isPaused = false;
         Time.timeScale = 1f;
-        menuCanvas.SetActive(false);
+        inventoryCanvas.SetActive(false);
     }
 }
