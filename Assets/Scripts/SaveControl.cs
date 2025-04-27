@@ -7,13 +7,14 @@ using UnityEngine.SceneManagement;
 public class SaveControl : MonoBehaviour
 {
     private string saveLocation;
-    
+    private InventoryControl inventoryControl;
 
     // Start is called before the first frame update
     void Start()
     {
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
 
+        inventoryControl = FindObjectOfType<InventoryControl>();
     }
 
     public void SaveGame()
@@ -21,6 +22,7 @@ public class SaveControl : MonoBehaviour
         SAVEDATA saveData = new SAVEDATA
         {
             playerPosistion = GameObject.FindGameObjectWithTag("Player").transform.position,
+            inventorySaveData = inventoryControl.GetInventoryItems()
         };
 
         PlayerPrefs.SetInt("SceneSaved", SceneManager.GetActiveScene().buildIndex);
@@ -39,9 +41,16 @@ public class SaveControl : MonoBehaviour
 
             SceneManager.LoadScene(PlayerPrefs.GetInt("SceneSaved"));
 
+            inventoryControl.SetInventoryItems(savedData.inventorySaveData);
+
             Time.timeScale = 1f;
         }
-        
+        else
+        {
+            SaveGame();
+            inventoryControl.SetInventoryItems(new List<InventorySaveData>());
+        }
+
     }
 
 }

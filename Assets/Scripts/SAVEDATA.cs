@@ -10,6 +10,6 @@ public class SAVEDATA
 {
 
     public Vector3 playerPosistion;
-
+    public List<InventorySaveData> inventorySaveData; 
 
 }
