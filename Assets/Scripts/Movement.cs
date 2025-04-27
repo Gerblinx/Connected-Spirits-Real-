@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");   // W/S or Up/Down
     }
 
+
     private void FixedUpdate()
     {
         // Move the player using Rigidbody2D
