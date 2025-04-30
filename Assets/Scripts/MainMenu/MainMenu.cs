@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     [Header("Menu Navigation")]
-    [SerializeField] private LoadMenu loadSlotsMenu;
+    [SerializeField] private SaveLoadMenu loadSlotsMenu;
 
 
     [Header("Menu Buttons")]

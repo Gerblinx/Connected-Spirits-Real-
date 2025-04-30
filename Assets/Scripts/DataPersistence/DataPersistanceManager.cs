@@ -78,9 +78,7 @@ public class DataPersistanceManager : MonoBehaviour
 
     public void LoadGame()
     {
-        gameData = dataHandler.Load(selectedProfileId);
-
-        
+        this.gameData = dataHandler.Load(selectedProfileId);
 
         if(gameData == null && initializeDataIfNull)
         {
@@ -98,6 +96,7 @@ public class DataPersistanceManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(gameData);
         }
+
 
     }
 

@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class GameData 
 {
-    
-
+  
     public Vector2 playerPosition;
     
 

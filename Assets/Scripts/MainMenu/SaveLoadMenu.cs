@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoadMenu : MonoBehaviour
+public class SaveLoadMenu : MonoBehaviour
 {
 
     [Header("Menu Navigation")]

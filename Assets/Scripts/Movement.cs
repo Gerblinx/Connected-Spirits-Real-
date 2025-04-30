@@ -47,11 +47,6 @@ public class Movement : MonoBehaviour, IDataPersistence
         movement.x = Input.GetAxisRaw("Horizontal"); // A/D or Left/Right
         movement.y = Input.GetAxisRaw("Vertical");   // W/S or Up/Down
 
-        if (movement != Vector2.zero)
-        {
-            Debug.Log("➡️ Movement input detected: " + movement);
-        }
-
     }
 
 
