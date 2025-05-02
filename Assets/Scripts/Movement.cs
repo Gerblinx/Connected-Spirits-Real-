@@ -12,27 +12,18 @@ public class Movement : MonoBehaviour, IDataPersistence
 
     private void Awake()
     {
+      
         rb = GetComponent<Rigidbody2D>();
     }
 
     public void LoadData(GameData data)
     {
-        //Debug.Log("LoadData called with position: " + data.playerPosition);
-        //rb.position = data.playerPosition;
-        //positionLoaded = true;
-
         Debug.Log("LoadData called with position: " + data.playerPosition);
-        StartCoroutine(SetPositionNextFrame(data.playerPosition));
-    }
-
-    private IEnumerator SetPositionNextFrame(Vector2 pos)
-    {
-        yield return null; // Wait 1 frame
-        rb.position = pos;
-        Debug.Log("Position forcibly applied in coroutine: " + rb.position);
+        rb.position = data.playerPosition;
         positionLoaded = true;
     }
 
+  
     public void SaveData(ref GameData data)
     {
         data.playerPosition = rb.position;
