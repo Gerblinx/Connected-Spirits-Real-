@@ -1,1 +1,1 @@
-﻿{"inkVersion":21,"root":[[["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":21,"root":[[{"->":"main"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"main":[["^I wonder if the water still runs here.","\n","^I feel so gross right now.","\n","^Turn on the water?","\n","ev","str","^Yes","/str","/ev",{"*":".^.c-0","flg":4},"ev","str","^No","/str","/ev",{"*":".^.c-1","flg":4},{"c-0":["\n","end",{"#f":5}],"c-1":["^ ","\n","end",{"#f":5}]}],{"#f":1}],"#f":1}],"listDefs":{}}
