@@ -18,8 +18,6 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI[] choiceText;
 
     private Story currentstory;
-
-    public bool sinkDialogue;
     public bool dialogueIsPlaying { get; private set; }
 
     private static DialogueManager instance;
@@ -48,7 +46,7 @@ public class DialogueManager : MonoBehaviour
 
         choiceText = new TextMeshProUGUI[choices.Length];
         int index = 0;
-        foreach(GameObject choice in choices)
+        foreach (GameObject choice in choices)
         {
             choiceText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
@@ -98,8 +96,10 @@ public class DialogueManager : MonoBehaviour
         if (currentstory.canContinue)
         {
             dialogueText.text = currentstory.Continue();
-
+            
             DisplayChoices();
+            
+
         }
         else
         {
