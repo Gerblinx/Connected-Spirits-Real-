@@ -1173,7 +1173,7 @@ Transform:
   m_GameObject: {fileID: 399932088}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.18666, y: 6.4608765, z: -0.034397513}
+  m_LocalPosition: {x: 1.66, y: 6.4608765, z: -0.034397513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1707,7 +1707,7 @@ Transform:
   m_GameObject: {fileID: 620525976}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.66333985, y: -6.5008764, z: 0.034397513}
+  m_LocalPosition: {x: -6.6, y: 0.42, z: 0.034397513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3125,7 +3125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1932357957}
-  inkJSON: {fileID: 0}
+  inkJSON: {fileID: 4900000, guid: 3274fc2f751b77e4da1bf81c877ce0aa, type: 3}
   playerInRange: 0
 --- !u!61 &977702281
 BoxCollider2D:
@@ -8238,6 +8238,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2868249332674931410, guid: 1458a6867aede764dafbfc4560018a21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.5708647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868249332674931410, guid: 1458a6867aede764dafbfc4560018a21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.9875407
+      objectReference: {fileID: 0}
     - target: {fileID: 5403656178916091708, guid: 1458a6867aede764dafbfc4560018a21, type: 3}
       propertyPath: m_Follow
       value: 
@@ -8285,6 +8293,14 @@ PrefabInstance:
     - target: {fileID: 8155868552767340988, guid: 1458a6867aede764dafbfc4560018a21, type: 3}
       propertyPath: m_Name
       value: == CAMERA ==
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708090943143992273, guid: 1458a6867aede764dafbfc4560018a21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708090943143992273, guid: 1458a6867aede764dafbfc4560018a21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.990408
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
